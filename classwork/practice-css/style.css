@@ -1,0 +1,175 @@
+/* Header */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #24252d;
+  color: #fff;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #3a3b44;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(216, 216, 216);
+  padding: 0.1rem;
+  margin: 0 5rem;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+header nav ul li a:hover {
+  color: #fff;
+}
+
+/* Main */
+#who {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#who h1 {
+  margin: 2rem 0 0 0;
+  font-size: 2.2rem;
+}
+
+#who span {
+  margin-bottom: 0.5rem;
+}
+
+#who blockquote {
+  color: #8b8c92;
+  letter-spacing: 0.1rem;
+}
+
+.linus-profile {
+  width: 250px;
+  height: 250px;
+  display: block;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.linus-profile img {
+  transform: scale(0.7);
+  position: absolute;
+  top: -130px;
+  right: -290px;
+}
+
+#about,
+#accomplishments {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 80%;
+  min-width: 60%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+#about h2,
+#accomplishments h2 {
+  width: 100%;
+  text-transform: uppercase;
+  color: #dadbe0;
+  letter-spacing: 0.1rem;
+}
+
+#about article,
+#accomplishments p {
+  line-height: 2rem;
+  color: rgb(240, 240, 240);
+  width: 100%;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #19191f;
+}
+
+/* Form */
+
+form button {
+  background-color: #2962ff;
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.9rem;
+  border: none;
+  margin: 10px 5px;
+  border-radius: 3px;
+  padding: 15px 25px;
+  cursor: pointer;
+
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 0.025rem;
+
+  position: relative;
+  top: 0;
+  transition: all 0.1s ease-in-out;
+}
+
+form button:hover {
+  background-color: #1c44b2;
+  top: -3px;
+  box-shadow: rgba(80, 80, 80, 0.15) 0px 5px 15px;
+}
+
+form div {
+  margin: 2rem;
+}
+
+form input, form textarea {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #f1f5f9;
+  border-radius: 5px;
+  border: 3px solid transparent;
+  outline: 0;
+  padding: 1rem;
+  color: #757d94;
+}
+
+form input:focus,
+form input:active,
+form textarea:focus,
+form textarea:active {
+  background-color: #f1f5f9;
+  border: 3px solid #2962ff;
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group label {
+  position: absolute;
+  top: -25px;
+  font-size: 0.8rem;
+}

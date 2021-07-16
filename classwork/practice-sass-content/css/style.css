@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+}
+.header__nav {
+  position: absolute;
+  top: 0;
+  margin-top: 2rem;
+}
+.header__nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between !important;
+}
+.header__nav ul li {
+  margin: 0 3rem;
+}
+.header__nav ul a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 0.15rem;
+}
+.header__nav ul a::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 1.5px;
+  background-color: #fff;
+  margin-top: 0.2rem;
+  transition: width 0.2s ease-in-out;
+}
+.header__nav ul a:hover::after {
+  width: 100%;
+}
+
+.search {
+  height: 80vh;
+  background: url(./../img/header-img.png) no-repeat #000;
+  background-size: 100% auto;
+  border-radius: 0 0 5rem 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__group {
+  position: relative;
+}
+.form__input {
+  padding: 1rem 1rem 0rem 1.5rem;
+  outline: 0;
+  border: none;
+  border-right: 1px solid #dddddd;
+}
+.form__input::placeholder {
+  font-size: 0.9rem;
+}
+.form__label {
+  position: absolute;
+  font-size: 0.8rem;
+  font-weight: 500;
+  left: 25px;
+  top: -2.5px;
+}
+.form__submit {
+  background-color: #2962ff;
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.9rem;
+  border: none;
+  margin: 10px 5px;
+  border-radius: 3px;
+  padding: 15px 25px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 500;
+  letter-spacing: 0.025rem;
+  position: relative;
+  top: 0;
+  transition: all 0.1s ease-in-out;
+  margin-left: 1rem;
+}
+.form__submit:hover {
+  background-color: #1c44b2;
+  top: -3px;
+  box-shadow: rgba(80, 80, 80, 0.15) 0px 5px 15px;
+}
+
+.search-wrapper {
+  border-radius: 10px;
+  padding: 1rem;
+  background-color: #fff;
+  margin-top: 7.5rem;
+}
+
+.countries {
+  display: flex;
+  flex-direction: column;
+}
+
+/*# sourceMappingURL=style.css.map */

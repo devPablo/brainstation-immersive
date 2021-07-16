@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Travel.</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- <div class="header-logo">
+        <span>TRAVEL.</span>
+      </div> -->
+      <nav class="header__nav">
+        <ul>
+          <li><a href="#nav-countries">Countries</a></li>
+          <li><a href="#nav-trending">Trending</a></li>
+          <li><a href="#nav-partners">Partners</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="search">
+        <div class="search-wrapper">
+          <form action="" class="form">
+            <div class="form__group">
+              <label class="form__label">Location</label>
+              <input class="form__input" type="text" placeholder="Which country?"/>
+            </div>
+            <div class="form__group">
+              <label class="form__label">Check in</label>
+              <input class="form__input" type="text" placeholder="Add dates"/>
+            </div>
+            <div class="form__group">
+              <label class="form__label">Check out</label>
+              <input class="form__input" type="text" placeholder="Add dates"/>
+            </div>
+            <div class="form__group">
+              <label class="form__label">Guests</label>
+              <input class="form__input" type="text" placeholder="Add guests"/>
+            </div>
+            <div class="form__group">
+              <button class="form__submit" type="submit">Search</button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section id="nav-countries" class="countries">
+        <div>
+          <h2>Visit any country</h2>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <img class="card__image" src="./img/country-costarica.jpg" alt="Costa Rica" />
+            <span class="card__title">Costa Rica</span>
+          </div>
+          <div class="card">
+            <img class="card__image" src="./img/country-korea.jpg" alt="South Korea" />
+            <span class="card__title">South Korea</span>
+          </div>
+          <div class="card">
+            <img class="card__image" src="./img/country-lebanon.jpg" alt="Lebanon" />
+            <span class="card__title">Lebanon</span>
+          </div>
+          <div class="card">
+            <img class="card__image" src="./img/country-england.jpg" alt="England" />
+            <span class="card__title">England</span>
+          </div>
+        </div>
+      </section>
+      <section id="nav-trending"></section>
+      <section id="nav-partners"></section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
